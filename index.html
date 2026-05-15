@@ -1,154 +1,762 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imran's UI Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Imran Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./assets/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Imran Khan - Senior UI Developer with 8+ years of experience in HTML, CSS, SCSS, React, accessibility and responsive UI development."
+    />
+
+    <meta
+      name="keywords"
+      content="UI Developer, Frontend Developer, React Developer, SCSS Developer, Accessibility, Responsive Design, Mumbai UI Developer"
+    />
+
+    <meta name="author" content="Imran Khan" />
+
+    <meta property="og:title" content="Imran Khan | Senior UI Developer" />
+
+    <meta
+      property="og:description"
+      content="Modern frontend portfolio showcasing responsive UI, accessibility and enterprise projects."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image" content="./assets/images/preview.png" />
+
+    <meta property="og:url" content="https://yourdomain.com" />
+
+    <meta name="theme-color" content="#010111" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="nav-container">
-        <div class="logo">Imran UI Developer</div>
-        <ul class="nav-menu">
-          <li><a href="#specialties">Specialties</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+    <main class="page-wrapper">
+      <!-- HEADER -->
+      <header class="header" role="banner">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#hero" class="logo" aria-label="Imran Khan Portfolio Home">
+              <span class="logo__dot"></span>
+              Imran Khan
+            </a>
 
-    <div class="hero-wrapper">
-      <section class="hero">
-        <div class="hero-content">
-          <div class="hero-card">
-            <span>Hi There </span>
-            <h1>I'm <span>Imran khan</span></h1>
-            <p>I'm a UI Developer</p>
-          </div>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn primary">Resume</a>
-            <a href="#contact" class="btn secondary">Contact me</a>
+            <nav
+              class="navbar"
+              role="navigation"
+              aria-label="Primary Navigation"
+            >
+              <ul class="navbar__list">
+                <li>
+                  <a href="#hero" aria-label="Go to Home Section">Home</a>
+                </li>
+                <li>
+                  <a href="#about" aria-label="Go to About Section">About</a>
+                </li>
+                <li>
+                  <a href="#skills" aria-label="Go to Skills Section">Skills</a>
+                </li>
+                <li>
+                  <a href="#projects" aria-label="View Projects Section"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="#journey" aria-label="View Experience Section"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" aria-label="Go to Contact Section"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="mailto:ikimrankhan658@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+            >
+              Let's Connect
+            </a>
           </div>
         </div>
-        <div class="hero-content-image">
-            <img src="./assets/images/portfolio.png"  />
+      </header>
+
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <!-- LEFT -->
+            <div class="hero__content">
+              <span class="hero__subtitle"> Hi! I'm </span>
+
+              <h1 class="hero__title">Imran <span>Khan</span></h1>
+
+              <h2 class="hero__designation">Senior UI Developer</h2>
+
+              <p class="hero__description">
+                8+ years of experience crafting scalable, accessible and
+                pixel-perfect user interfaces for enterprise and high-impact
+                digital products.
+              </p>
+
+              <div class="hero__buttons">
+                <a href="#projects" class="btn btn--gradient"> View My Work </a>
+
+                <a
+                  href="./assets/pdf/imran-khan-ui-developer-designer.pdf"
+                  download
+                  class="btn btn--outline"
+                >
+                  Download Resume
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero__image-wrapper">
+              <img
+                src="./assets/images/portfolio.png"
+                alt="Imran Khan UI Developer Illustration"
+               class="hero__image"
+  loading="eager"
+  decoding="async"
+              />
+
+              <div class="floating-card floating-card--htmlcss">
+                <i class="fa-solid fa-code"></i>
+                HTML/CSS
+              </div>
+              <div class="floating-card floating-card--responsive">
+                <i class="fa-solid fa-mobile-screen"></i>
+                Responsive
+              </div>
+
+              <div class="floating-card floating-card--scss">
+                <i class="fa-brands fa-sass"></i>
+                SCSS
+              </div>
+
+              <div class="floating-card floating-card--figma">
+                <i class="fa-brands fa-figma"></i>
+                Figma
+              </div>
+
+              <div class="floating-card floating-card--accessibility">
+                <i class="fa-solid fa-universal-access"></i>
+                Accessibility
+              </div>
+
+              <div class="floating-card floating-card--javascript">
+                <i class="fa-brands fa-js"></i>
+                Javascript
+              </div>
+
+              <div class="floating-card floating-card--bootstrap">
+                <i class="fa-brands fa-bootstrap"></i>
+                Bootstrap
+              </div>
+            </div>
+          </div>
+          <div class="counter-wrapper">
+            <div class="social">
+              <span>Let's connect</span>
+
+              <ul class="social__list">
+                <li>
+                  <a
+                    href="https://github.com/imran9768?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                     aria-label="Visit Github Profile"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/imrankhan658/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                     aria-label="Visit LinkedIn Profile"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/9768746267"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                     aria-label="Open WhatsApp Chat"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:ikimrankhan658@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                     aria-label="Send Email"
+                    ><i class="fa-solid fa-envelopes-bulk"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- STATS -->
+            <div class="stats">
+              <div class="stats__card">
+                <h3>8+</h3>
+                <p>Years Experience</p>
+              </div>
+
+              <div class="stats__card">
+                <h3>20+</h3>
+                <p>Projects Completed</p>
+              </div>
+
+              <div class="stats__card">
+                <h3>10+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about section-space">
+        <div class="container">
+          <!-- TOP CONTENT -->
+          <div class="about__top">
+            <div class="about__heading">
+              <span class="section-subtitle"> ABOUT ME </span>
 
-    <section id="specialties">
-      <h2>My Specialties</h2>
-      <div class="specialties-grid">
-        <div class="card">HTML5 + CSS3 + JS</div>
-        <div class="card">React / Vue UI</div>
-        <div class="card">Mobile Responsive</div>
-        <div class="card">Modern Animations</div>
-      </div>
-    </section>
+              <h2 class="section-title">
+                I build digital products that are
+                <span>fast, accessible & delightful.</span>
+              </h2>
+            </div>
 
-    <section id="projects">
-      <h2>Recent Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img
-            src="https://source.unsplash.com/400x300/?ui,design"
-            alt="Project 1"
-          />
-        </div>
-        <div class="project-card">
-          <img
-            src="https://source.unsplash.com/400x300/?code,frontend"
-            alt="Project 2"
-          />
-        </div>
-        <div class="project-card">
-          <img
-            src="https://source.unsplash.com/400x300/?website,design"
-            alt="Project 3"
-          />
-        </div>
-      </div>
-    </section>
+            <div class="about__content">
+              <p>
+                I specialize in building modern web interfaces using React, SCSS
+                and Design Systems. I love turning complex problems into simple,
+                beautiful and intuitive user experiences.
+              </p>
+            </div>
+          </div>
 
-    <section id="process">
-      <h2>Work Process</h2>
-      <div class="process-steps">
-        <div class="step">01. Research</div>
-        <div class="step">02. Design</div>
-        <div class="step">03. Develop</div>
-        <div class="step">04. Launch</div>
-      </div>
-    </section>
+          <!-- ABOUT CARDS -->
+          <div class="about-grid">
+            <article class="about-card">
+              <div class="about-card__icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
 
-    <section class="testimonial-section">
-      <h2>What Clients Say</h2>
-      <blockquote>
-        "Imran transformed our UI to world-class design. Highly professional and
-        creative!"
-      </blockquote>
-    </section>
+              <h3>UI Development</h3>
 
-    <section id="pricing">
-      <h2>Pricing Plans</h2>
-      <div class="pricing-cards">
-        <div class="pricing-card">
-          <h3>Starter</h3>
-          <p>$199</p>
-          <p>1 Page Website</p>
-        </div>
-        <div class="pricing-card">
-          <h3>Pro</h3>
-          <p>$499</p>
-          <p>Up to 5 Pages</p>
-        </div>
-        <div class="pricing-card">
-          <h3>Enterprise</h3>
-          <p>$999+</p>
-          <p>Custom Design</p>
-        </div>
-      </div>
-    </section>
+              <p>
+                Pixel-perfect, responsive and accessible interfaces using modern
+                frontend stack.
+              </p>
 
-    <section id="blog">
-      <h2>From My Blog</h2>
-      <div class="blog-posts">
-        <div class="blog-card">
-          <img
-            src="https://source.unsplash.com/300x200/?tech,blog"
-            alt="Blog 1"
-          />
-          <h3>UI Tips for 2025</h3>
-          <p>Explore modern UI trends and how to use them effectively.</p>
-        </div>
-        <div class="blog-card">
-          <img
-            src="https://source.unsplash.com/300x200/?coding,web"
-            alt="Blog 2"
-          />
-          <h3>Design Systems</h3>
-          <p>Build scalable design systems that developers love.</p>
-        </div>
-      </div>
-    </section>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
 
-    <section id="contact" class="contact-section">
-      <h2>Let’s Work Together!</h2>
-      <a href="mailto:imran@example.com" class="contact-btn">Say Hello</a>
-    </section>
+            <article class="about-card">
+              <div class="about-card__icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 Imran Khan. All Rights Reserved.</p>
-    </footer>
+              <h3>Design Systems</h3>
+
+              <p>
+                Building scalable design systems and reusable component
+                libraries.
+              </p>
+
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <article class="about-card">
+              <div class="about-card__icon">
+                <i class="fa-brands fa-figma"></i>
+              </div>
+
+              <h3>Figma to Code</h3>
+
+              <p>
+                Expert in translating Figma designs into clean and maintainable
+                code.
+              </p>
+
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <article class="about-card">
+              <div class="about-card__icon">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+
+              <h3>Performance</h3>
+
+              <p>
+                Optimized interfaces for better scalability and user experience.
+              </p>
+
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <article class="about-card">
+              <div class="about-card__icon">
+                <i class="fa-solid fa-universal-access"></i>
+              </div>
+
+              <h3>Accessibility</h3>
+
+              <p>
+                WCAG compliant semantic HTML and inclusive digital experiences.
+              </p>
+
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skill section-space">
+        <div class="container">
+          <!-- SKILLS -->
+          <div class="skills">
+            <span class="section-subtitle"> MY SKILLS </span>
+
+            <h2 class="skills__title">Technologies I work with</h2>
+
+            <div class="skills__wrapper">
+              <div class="skill-badge">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-sass"></i>
+                <span>SCSS</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-react"></i>
+                <span>React.js</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-vuejs"></i>
+                <span>Vue.js</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-solid fa-wind"></i>
+                <span>Tailwind CSS</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+
+              <div class="skill-badge">
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="skill section-space">
+        <div class="container">
+          <!-- PROJECTS -->
+          <div class="projects">
+            <div class="projects__top">
+              <div>
+                <span class="section-subtitle"> FEATURED PROJECTS </span>
+
+                <h2 class="projects__title">Some things I've built</h2>
+              </div>
+
+              <!-- <a href="#" class="projects__link">
+                View all projects
+                <i class="fa-solid fa-arrow-right"></i>
+              </a> -->
+            </div>
+
+            <div class="projects-grid">
+              <!-- PROJECT CARD -->
+              <!-- PROJECT CARD -->
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="./assets/images/blackbull.png"
+  alt="Black Bull Whiskey Website"
+  loading="lazy"
+  decoding="async" />
+                </div>
+
+                <div class="project-card__content">
+                  <span>React UI, SCSS, JavaScript</span>
+
+                  <h3>Black Bull Whiskey</h3>
+
+                  <p>
+                    Built a high-end animated marketing website using React,
+                    SCSS and JavaScript with smooth transitions, responsive UI
+                    and modern interactive effects..
+                  </p>
+
+                  <div class="project-card__links">
+                    <a href="https://www.blackbullwhisky.com/" rel="noopener noreferrer" target="_blank">
+                      Live Preview
+                    </a>
+
+                    <!-- <a href="#"> Case Study </a> -->
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="./assets/images/oakum.png"
+  alt="Oakum Corporate Website"
+  loading="lazy"
+  decoding="async" />
+                </div>
+
+                <div class="project-card__content">
+                  <span>HTML, SCSS, Scroll Animation</span>
+
+                  <h3>Oakum</h3>
+
+                  <p>
+                    Built a modern animated corporate website with responsive
+                    UI, scroll-based interactions and scalable SCSS architecture
+                    for seamless user experience.
+                  </p>
+
+                  <div class="project-card__links">
+                    <a href="https://oakum.in/" rel="noopener noreferrer" target="_blank">
+                      Live Preview
+                    </a>
+
+                    <!-- <a href="#"> Case Study </a> -->
+                  </div>
+                </div>
+              </article>
+
+              <!-- PROJECT CARD -->
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img
+                    <img
+  src="./assets/images/loan-portal.png"
+  alt="Loan Officer Portal Dashboard"
+  loading="lazy"
+  decoding="async"
+/>
+                  />
+                </div>
+
+                <div class="project-card__content">
+                  <span>Vue UI, SCSS</span>
+
+                  <h3>Loan Officer portal</h3>
+
+                  <p>
+                    Built a scalable loan officer portal featuring responsive
+                    dashboard UI, reusable components and optimized workflows
+                    for enterprise-level financial operations.
+                  </p>
+
+                  <!-- <div class="project-card__links">
+                    <a href="#"> Live Preview </a>
+
+                    <a href="#"> Case Study </a>
+                  </div> -->
+                </div>
+              </article>
+
+              <!-- PROJECT CARD -->
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img 
+  src="./assets/images/flyingboot.png"
+  alt="Flying Boot Animated Website"
+  loading="lazy"
+  decoding="async"
+ />
+                </div>
+
+                <div class="project-card__content">
+                  <span>HTML, SCSS, CSS Animation</span>
+
+                  <h3>Flying Boot</h3>
+
+                  <p>
+                    Created an interactive animated website with responsive UI,
+                    smooth CSS animations and engaging visual experience using
+                    HTML, SCSS and modern frontend techniques.
+                  </p>
+
+                  <div class="project-card__links">
+                    <a href="http://theflyingboots.com/" rel="noopener noreferrer" target="_blank">
+                      Live Preview
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE + ACHIEVEMENTS -->
+      <section id="journey" class="journey section-space">
+        <div class="container">
+          <div class="journey__wrapper">
+            <!-- EXPERIENCE -->
+            <div class="journey-experience">
+              <span class="section-subtitle"> EXPERIENCE </span>
+
+              <h2 class="section-title-sm">My professional journey</h2>
+
+              <div class="timeline">
+                <!-- ITEM -->
+                <div class="timeline-item">
+                  <div class="timeline-item__dot"></div>
+
+                  <div class="timeline-item__content">
+                    <div class="timeline-item__left">
+                      <h3>Senior UI / CSS Developer</h3>
+
+                      <span> V2 Solutions </span>
+
+                      <small> Jul 2023 — Jan 2026 </small>
+                    </div>
+
+                    <div class="timeline-item__right">
+                      <p>
+                        Developed scalable UI for enterprise products, built
+                        reusable components and improved performance with
+                        cross-functional teams.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="timeline-item">
+                  <div class="timeline-item__dot"></div>
+
+                  <div class="timeline-item__content">
+                    <div class="timeline-item__left">
+                      <h3>UI / CSS Developer</h3>
+
+                      <span> Oakum </span>
+
+                      <small> Oct 2022 — May 2023 </small>
+                    </div>
+
+                    <div class="timeline-item__right">
+                      <p>
+                        Built modern web applications using React, SCSS and
+                        component based architecture.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="timeline-item">
+                  <div class="timeline-item__dot"></div>
+
+                  <div class="timeline-item__content">
+                    <div class="timeline-item__left">
+                      <h3>UI / CSS Developer</h3>
+
+                      <span> Super Scholar </span>
+
+                      <small> Feb 2022 — Sept 2022 </small>
+                    </div>
+
+                    <div class="timeline-item__right">
+                      <p>
+                        Developed responsive websites, maintained components and
+                        worked on new feature implementations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="timeline-item">
+                  <div class="timeline-item__dot"></div>
+
+                  <div class="timeline-item__content">
+                    <div class="timeline-item__left">
+                      <h3>UI / CSS Developer</h3>
+
+                      <span> Oakum </span>
+
+                      <small> Jun 2019 — Jan 2022 </small>
+                    </div>
+
+                    <div class="timeline-item__right">
+                      <p>
+                        Converted designs to responsive interfaces and
+                        contributed to UI framework and component library.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="./assets/pdf/imran-khan-ui-developer-designer.pdf"
+                download
+                target="_blank"
+                class="resume-btn"
+              >
+                View Full Resume
+
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+            <div class="journey-achievements">
+              <span class="section-subtitle"> ACHIEVEMENTS </span>
+
+              <h2 class="section-title-sm">Some highlights</h2>
+
+              <div class="achievement-card">
+                <ul class="achievement-list">
+                  <li>
+                    <i class="fa-brands fa-sass"></i>
+
+                    <span>
+                      Reduced CSS complexity using BEM & Modular SCSS
+                      architecture.
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-cube"></i>
+
+                    <span>
+                      Built reusable UI components used across enterprise
+                      modules.
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+
+                    <span>
+                      Improved responsive performance across all devices.
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-brands fa-figma"></i>
+
+                    <span>
+                      Delivered pixel-perfect UI from Figma with high accuracy.
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-universal-access"></i>
+
+                    <span>
+                      Ensured accessibility and cross-browser compatibility.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section-space">
+        <div class="container">
+          <!-- CTA -->
+          <div class="journey-cta">
+            <div class="journey-cta__left">
+              <div class="journey-cta__icon">
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+
+              <div class="journey-cta__content">
+                <h3>Let's build something amazing together</h3>
+
+                <p>I'm currently open to new opportunities. Let's connect!</p>
+              </div>
+            </div>
+
+            <a
+              href="mailto:ikimrankhan658@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+               aria-label="Send Email to Imran Khan"
+              class="journey-cta__btn"
+            >
+              Let's Talk About Your Project
+
+              <!-- <i class="fa-solid fa-arrow-right"></i> -->
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <p>© 2026 Imran Khan. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
